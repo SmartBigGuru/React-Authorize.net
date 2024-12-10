@@ -12,7 +12,7 @@ type ErrorType = Record<string, any>; // Adjust this as well based on the error 
 
 export default function CheckoutPage() {
 
-    const clientKey: string = "9aF966Nn3Ch4b9C6";
+    const clientKey: string = "2Y2W7LXwFsCqaBpj723C7juMu7GquF8Aftc7E2U54zNd446T35BrPNLC87c5FHDn";
     const apiLoginId: string = "8LqpS52cU3n";
 
     const onSuccessHandler = (response: ResponseType): void => {
