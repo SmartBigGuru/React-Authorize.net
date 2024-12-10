@@ -12,8 +12,8 @@ type ErrorType = Record<string, any>; // Adjust this as well based on the error 
 
 export default function CheckoutPage() {
 
-    const clientKey: string = "5n89FY2Wdn";
-    const apiLoginId: string = "3UrVG248Y3d2VAk5";
+    const clientKey: string = "8LqpS52cU3n";
+    const apiLoginId: string = "39V93VMKjj823bc5";
 
     const onSuccessHandler = (response: ResponseType): void => {
         console.log("response", response);
@@ -26,7 +26,7 @@ export default function CheckoutPage() {
     return (
         <div className="App">
             <FormContainer
-                environment="production"
+                environment="sandbox"
                 onError={onErrorHandler}
                 onSuccess={onSuccessHandler}
                 amount={0.01}
