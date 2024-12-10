@@ -26,10 +26,10 @@ export default function CheckoutPage() {
     return (
         <div className="App">
             <FormContainer
-                environment="sandbox"
+                environment="production"
                 onError={onErrorHandler}
                 onSuccess={onSuccessHandler}
-                amount={25}
+                amount={0.01}
                 component={FormComponent}
                 clientKey={clientKey}
                 apiLoginId={apiLoginId}
