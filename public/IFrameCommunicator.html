@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Iframe Communicator</title></head>
+<body>
+  <script>
+    function receiveMessage(event) {
+      if (event.origin === 'https://test.authorize.net') {
+        window.top.postMessage(event.data, '*');
+      }
+    }
+    window.addEventListener('message', receiveMessage);
+  </script>
+</body>
+</html>
